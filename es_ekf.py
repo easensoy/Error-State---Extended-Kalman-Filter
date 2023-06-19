@@ -12,7 +12,6 @@ with open('data/pt3_data.pkl', 'rb') as file:
     data = pickle.load(file)
 
 
-################################################################################################
 # Each element of the data dictionary is stored as an item from the data dictionary, which we
 # will store in local variables, described by the following:
 #   gt: Data object containing ground truth. with the following fields:
@@ -35,7 +34,7 @@ with open('data/pt3_data.pkl', 'rb') as file:
 #   lidar: StampedData object with the LIDAR data (positions only).
 #     data: The actual data
 #     t: Timestamps in ms.
-################################################################################################
+
 gt = data['gt']
 imu_f = data['imu_f']
 imu_w = data['imu_w']
